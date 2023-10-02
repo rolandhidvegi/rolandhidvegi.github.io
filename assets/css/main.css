@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
-/*
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2637,6 +2632,18 @@ input, select, textarea {
 		.image img {
 			display: block;
 			border-radius: 4px;
+		}
+
+		.image .hover-image {
+			position:absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+		}
+
+		.image:hover .hover-image {
+			opacity: 1;
 		}
 
 		.image.left, .image.right {
