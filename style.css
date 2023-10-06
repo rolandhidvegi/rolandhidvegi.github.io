@@ -372,8 +372,11 @@ article .icon {
 /* PROJECTS SECTION */
 #projects {
     position:relative;
-    margin-bottom: 15rem;
+    height: auto; /* set initial height to auto */
 }
+
+    
+
 .all-projects-container {
     justify-content: center;
     gap: 2rem;
