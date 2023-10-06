@@ -1,411 +1,297 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-	<head>
-		<title>Roland Hidvegi Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roland Hidvegi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Roland Hidvégi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Hi, 
-								<br>I'm Roland Hidvégi</br>
-							</h1>
-							<p class="major">Passionate about electronics, PCBs, programming, rockets and space.</p>
-							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">More info</a></li>
-							</ul>
-						</div>
+    <nav id="hamburger-nav">
+        <div class="logo">Roland Hidvégi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Actual links that will be opened -->
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
 
-						<div class="image img">
-							<img src="images/CVPictureHidvegiRoland2.jpeg" alt="" />
-						</div>
-					</section>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/images/CVPictureHidvegiRoland3.jpeg" alt="Roland Hidvegi profile picture" class="shape">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p3">Hi, I'm</p>
+            <h1 class="title">Roland Hidvégi</h1>
+            <p class="section__text__p2">Passionate about electronics, <br>PCBs, programming, rockets, and space.</p>
 
+            <div class="button-container">
+                <button class="button btn-color-1"
+                    onclick="window.open('./assets/documents/CV - Roland Hidvégi October 2023.pdf')">Download
+                    CV</button>
+                <button class="button btn-color-2" onclick="location.href='./#contact'">Contact</button>
+            </div>
 
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Project 1</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/Project STM32F103C8T6/UDEMY_ST32F103_L.png" alt="" />
-							<img src="images/Project STM32F103C8T6/UDEMY_ST32F103_B_L.png" alt="" class="hover-image" />
-						</div>
-					</section>
+            <div id="socials-container">
+                <img src="./assets/images/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/roland-hidv%C3%A9gi-a24098233/', '_blank')">
+                <img src="./assets/images/github.png" alt="My GitHub profile" class="icon"
+                    onclick="window.open('https://github.com/rolandhidvegi', '_blank')">
+            </div>
+        </div>
+    </section>
 
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <!-- ABOUT IMAGE -->
+            <div class="section__pic-container">
+                <img src="./assets/images/CVPictureHidvegiRoland2.jpeg" alt="Profile picture" class="about-pic" />
+            </div>
+            <!-- ABOUT TEXT -->
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/images/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>2+ years <br> Frontend Development</p>
+                    </div>
 
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Project 2</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/Project STM32F405RGT6/STM32F405RGT6_R.png" alt="" />
-						</div>
-					</section>
+                    <div class="details-container">
+                        <img src="./assets/images/education.png" alt="Experience icon" class="icon" />
 
-				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Project 3</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/Project CanSat/CanSatV4.0.0_MainPCB_F2.png" alt="" />
-						</div>
-					</section>
+                        <h3>Education</h3>
+                        <p>C.N. Emanuil Gojdu <br> B.Sc. Mechatronics</p>
+                    </div>
 
-				<!-- Five -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Project 4</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/Project CanSat/CanSatV4.0.0_Gases_F.png" alt="" />
-						</div>
-					</section>
+                </div>
+                <div class="text-container">
+                    <p>3rd year student
+                        <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque recusandae distinctio quisquam
+                        veniam culpa, nulla rerum optio voluptatibus soluta provident maiores quidem eveniet laboriosam
+                        eaque at aperiam qui aut quos!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/images/arrow.png" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#experience'" />
+    </section>
 
-				<!-- Six -->	
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Project 5</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/Project CanSat/GroundStation_L.png" alt="" />
-						</div>
-					</section>
+    <section id="experience">
 
-				<!-- Seven -->	
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Project 6</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/Project MiniSumo/ZEM2023_MiniSumo_VL53L0X_R.png" alt="" />
-						</div>
-					</section>
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <!-- first box EDA -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">EDA</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/images/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>KiCad</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Altium Designer</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- second box Programming-->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/images/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>C#</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- third box CAD-->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">CAD</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/images/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Autodesk Inventor</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Fusion 360</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
 
+        
+        <img src="./assets/images/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#projects'" />
+    </section>
+    
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+    
+        <div class="experience-details-container">
+            <div class="all-projects-container">
+                <div class="project-container">
+                    <div class="project-details-right">
+                        <div class="content">
+                            <h2>Project 1</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra
+                                lacinia
+                                sit amet vel massa odio lorem ipsum dolor sit amet.</p>
+                        </div>
+    
+                        <div class="image-container">
+                            <img src="./assets/images/Project STM32F103C8T6/UDEMY_ST32F103_L.png" alt="STM32" />
+                            <img src="./assets/images/Project STM32F103C8T6/UDEMY_ST32F103_B_L.png" alt="STM32" class="hover-image"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-container">
+                    <div class="project-details-left">
+                        <div class="content">
+                            <h2>Project 1</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra
+                                lacinia
+                                sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce
+                                lorem
+                                lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+                        </div>
+    
+                        <div class="image-container">
+                            <img src="./assets/images/Project STM32F103C8T6/UDEMY_ST32F103_L.png" alt="STM32" />
+                            <img src="./assets/images/Project STM32F103C8T6/UDEMY_ST32F103_B_L.png" alt="STM32" class="hover-image"/>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+    
+    
+        </div>
+    
+        <img src="./assets/images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
 
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
 
+            <div class="contact-info-container">
+                <img src="./assets/images/email.png" 
+                alt="Email icon" class="icon email-icon"
+                onclick="window.open('mailto:roland0hidvegi@gmail.com', '_blank')"
+                />
+                <p><a href="mailto:rolandroland0hidvegi@gmail.com" target="_blank">Email</a></p>
+                
+            </div>
 
+            <div class="contact-info-container">
+                <img src="./assets/images/linkedin.png"
+                alt="LinkedIn icon" class="icon contact-icon"
+                onclick="window.open('https://www.linkedin.com/in/roland-hidv%C3%A9gi-a24098233/', '_blank')"
+                />
+                <p><a href="https://www.linkedin.com/in/roland-hidv%C3%A9gi-a24098233/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Roland Hidvégi. All Rights Reserved. </p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
 
-
-
-
-
-
-
-				<!-- Five -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Competitions</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-						</div>
-
-						<!-- Gallery -->
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
-								<article>
-									<a href="images/gallery/fulls/01.jpg" class="image">
-										<img src="images/gallery/thumbs/01.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/02.jpg" class="image">
-										<img src="images/gallery/thumbs/02.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Feugiat Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/03.jpg" class="image">
-										<img src="images/gallery/thumbs/03.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Amet</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/04.jpg" class="image">
-										<img src="images/gallery/thumbs/04.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="images/gallery/thumbs/05.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ultrices Magna</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="images/gallery/thumbs/06.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/07.jpg" class="image">
-										<img src="images/gallery/thumbs/07.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/08.jpg" class="image">
-										<img src="images/gallery/thumbs/08.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Risus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/09.jpg" class="image">
-										<img src="images/gallery/thumbs/09.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Tempus Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/10.jpg" class="image">
-										<img src="images/gallery/thumbs/10.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Etiam</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/11.jpg" class="image">
-										<img src="images/gallery/thumbs/11.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/12.jpg" class="image">
-										<img src="images/gallery/thumbs/12.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-							</div>
-
-					</section>
-
-				<!-- Six -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Ipsum sed consequat</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>Lorem</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-save"></span>
-									<h3>Ipsum</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Dolor</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>Amet</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-cog"></span>
-									<h3>Magna</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-paper-plane"></span>
-									<h3>Tempus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-desktop"></span>
-									<h3>Aliquam</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-sync-alt"></span>
-									<h3>Elit</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-hashtag"></span>
-									<h3>Morbi</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-bolt"></span>
-									<h3>Turpis</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-envelope"></span>
-									<h3>Ultrices</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-leaf"></span>
-									<h3>Risus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-							</div>
-						</div>
-					</section>
-
-				<!-- Seven -->
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.linkedin.com/in/roland-hidv%C3%A9gi-a24098233/" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:roland0hidvegi@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
