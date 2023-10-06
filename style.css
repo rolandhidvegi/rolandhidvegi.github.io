@@ -402,6 +402,9 @@ article .icon {
     text-align: justify;
     flex: 0.5;
 }
+.content p{
+    margin-top: 1rem;
+}
 .image-container{
     padding-top: 1rem;
     padding-bottom: 1rem;
