@@ -16,16 +16,28 @@
 
   #hamburger-nav {
     display: flex;
+    height: 8vh;
+  }
+  .hamburger-position{
+    display:flex;
+    justify-content: flex-end;
   }
 
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
+
+
+
+  #about {
+    margin-top: 10rem;
+    text-align: justify;
   }
 
   #profile,
   .section-container {
     display: block;
+  }
+
+  #contact {
+    height: 50vh;
   }
 
   .arrow {
@@ -41,8 +53,14 @@
     margin: 0 5%;
   }
 
-  .section__text__p2 {
-    font-size: 1rem;
+  .about-pic {
+    margin: 0 auto;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0rem auto 0rem;
   }
 
   .section__text__p3 {
@@ -52,16 +70,7 @@
   .shape {
     width: 250px;
     height: 250px;
-  }
 
-  .about-containers {
-    margin-top: 0;
-  }
-
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0rem auto 2rem;
   }
 }
 
@@ -73,8 +82,20 @@
   }
 
   #profile {
-    height: 83vh;
+    height: auto;
     margin-bottom: 0;
+  }
+
+  #about {
+    margin-top: 4rem;
+  }
+
+  #projects {
+    margin-top: 0rem;
+  }
+
+  .name-logo {
+    font-size: 1.5rem;
   }
 
   article {
@@ -120,15 +141,20 @@
 
   .section__pic-container {
     width: auto;
-    height: 46vw;
     justify-content: center;
   }
 
   .section__text__p2 {
-    font-size: 2rem;
+    padding-top: 1rem;
+    font-size: 1rem;
   }
 
   .text-container {
     text-align: justify;
+  }
+
+  .project-details-left,
+  .project-details-right {
+    display: block;
   }
 }
