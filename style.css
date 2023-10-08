@@ -360,7 +360,7 @@ section {
 
 article {
     display: flex;
-    width: 10rem;
+    /* width: 10rem; */
     /* justify-content: space-around; */
     /*I don't see any effect of this BUT*/
     justify-content: safe;
