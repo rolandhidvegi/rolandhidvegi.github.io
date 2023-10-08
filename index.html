@@ -239,14 +239,14 @@
                             <p>This is the PCB I am most proud of.<br>
                             It is the main PCB of the CanSat that participated in the 2023 edition of RCRC. It contains a lot of things tightly packed together, 
                             such as 2 synchronous step-down switch mode converters for 3.3V and 5V, a microcontroller, a LoRa Module, a microSD conector, and a bunch of sensors:
-                            temperature, humidity, pressure, a 6-axis IMU, CO2, as well as connectivity for a GPS module, GSM module, RS485 soil sensor, 4 analog inputs for
-                            SO<sub>2</sub>, NO<sub>2</sub>, CO, UV light and and solar irradiance.
+                            temperature, humidity, pressure, a 6-axis IMU, particulate matter, CO2, as well as connectivity for a GPS module, a GSM module, a buzzer, a solar irradiance sensor, RS485 soil sensor, 4 analog inputs for
+                            SO<sub>2</sub>, NO<sub>2</sub>, CO, and UV light.
                             </p>
                         </div>
     
                         <div class="image-container">
-                            <img src="./images/Project CanSat/CanSatV4.0.0_MainPCB_F2.png" alt="CanSat" />
-                            <img src="./images/Project CanSat/CanSatV4.0.0_MainPCB_F2.png" alt="STM32" class="hover-image"/>
+                            <img src="./images/Project CanSat/CanSatV4.0.0_MainPCB.png" alt="CanSat" />
+                            <img src="./images/Project CanSat/CanSatV4.0.0_MainPCB_B.png" alt="STM32" class="hover-image"/>
                         </div>
                     </div>
                 </div>
@@ -256,16 +256,18 @@
                     <div class="project-details-left">
                         <div class="content">
                             <h2>Gas Sensors - CanSat</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra
-                                lacinia
-                                sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce
-                                lorem
-                                lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+                            <p>This is the aditional PCB for the special electrochemical gas sensors used in the CanSat.
+                                They are  highly sensitive and selective to the target gas, but are not easy to use.<br>
+                                This PCB required an enormous amount of research and time to design. <br>
+                                It contains 3 trans-impedance amplifiers (current-to-voltage converters) because 
+                                these sensors have the output in current. Additionally, potentiostatic circuits
+                                maintain the correct bias potential between the sensing and reference electrodes.
+                            </p>
                         </div>
     
                         <div class="image-container">
-                            <img src="./images/Project CanSat/CanSatV4.0.0_Gases_F.png" alt="Gas sensors" />
-                            <img src="./images/Project CanSat/CanSatV4.0.0_Gases_F.png" alt="STM32" class="hover-image"/>
+                            <img src="./images/Project CanSat/CanSatV4.0.0_Gases.png" alt="Gas sensors" />
+                            <img src="./images/Project CanSat/CanSatV4.0.0_Gases_B.png" alt="STM32" class="hover-image"/>
                         </div>
                     </div>
                 </div>
@@ -275,16 +277,14 @@
                     <div class="project-details-right">
                         <div class="content">
                             <h2>GroundStation - CanSat</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra
-                                lacinia
-                                sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce
-                                lorem
-                                lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+                            <p>This is the receiving LoRa radio station for the CanSat. <br>
+                                It contains a LoRa module, an Arduino Nano and a SMA connector for the 7 element Yagi antenna. <br>
+                            </p>
                         </div>
     
                         <div class="image-container">
-                            <img src="./images/Project CanSat/GroundStation_L.png" alt="GroundStation" />
-                            <img src="./images/Project CanSat/GroundStation_R.png" alt="GroundStation" class="hover-image"/>
+                            <img src="./images/Project CanSat/GroundStation.png" alt="GroundStation" />
+                            <img src="./images/Project CanSat/GroundStation_B.png" alt="GroundStation" class="hover-image"/>
                         </div>
                     </div>
                 </div>
@@ -294,16 +294,15 @@
                     <div class="project-details-left">
                         <div class="content">
                             <h2>Mini Sumo Robot</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra
-                                lacinia
-                                sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce
-                                lorem
-                                lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+                            <p>This PCB design is lacking any special features; it has an Arduino, a DIY motor driver, 4 connectors for 
+                                color sensors and 4 connectors for distance sensors.<br> 
+                                But it was manually etched from a copper plate with ferric chloride.
+                            </p>
                         </div>
     
                         <div class="image-container">
-                            <img src="./images/Project MiniSumo/ZEM2023_MiniSumo_VL53L0X_L.png" alt="Mini Sumo" />
-                            <img src="./images/Project MiniSumo/ZEM2023_MiniSumo_VL53L0X_L.png" alt="Mini Sumo" class="hover-image"/>
+                            <img src="./images/Project MiniSumo/ZEM2023_MiniSumo_VL53L0X.png" alt="Mini Sumo" />
+                            <img src="./images/Project MiniSumo/ZEM2023_MiniSumo_VL53L0X_B.png" alt="Mini Sumo" class="hover-image"/>
                         </div>
                     </div>
                 </div>
@@ -332,13 +331,13 @@
                     <div class="project-details-left">
                         <div class="content">
                             <h2>STM32F405RGT6</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatem dicta amet porro nihil praesentium 
-                                eius inventore sapiente, id et reprehenderit quam. Et unde voluptatum quia qui nemo consectetur optio.</p>
+                            <p>This is my first 4 layer PCB.<br>
+                                I chose the STM32F405RGT6 microcontroller because it offers 1 Mbyte of flash memory.</p>
                         </div>
     
                         <div class="image-container">
-                            <img src="./images/Project STM32F405RGT6/STM32F405RGT6_L.png" alt="STM32" />
-                            <img src="./images/Project STM32F405RGT6/STM32F405RGT6_R.png" alt="STM32" class="hover-image"/>
+                            <img src="./images/Project STM32F405RGT6/STM32F405RGT6.png" alt="STM32" />
+                            <img src="./images/Project STM32F405RGT6/STM32F405RGT6_B.png" alt="STM32" class="hover-image"/>
                         </div>
                     </div>
                 </div>
@@ -348,13 +347,13 @@
                         <div class="content">
                             <h2>STM32F103C8T6</h2>
                             <p>This is the first PCB I ever designed. <br>
-                                It is simple microcontroller with UART and I2C interfaces, with an aditional SWD debugging connector.<br> I must admit that I had a few abandoned attempts with EasyEDA before, 
+                                It is a simple microcontroller with UART and I2C interfaces, with an aditional SWD debugging connector.<br> I must admit that I had a few abandoned attempts with EasyEDA before, 
                                 but this is my first project that is technically viable and would work for sure. Although, this PCB was never physically manufactured.</p>
                         </div>
     
                         <div class="image-container">
-                            <img src="./images/Project STM32F103C8T6/UDEMY_ST32F103_L.png" alt="STM32" />
-                            <img src="./images/Project STM32F103C8T6/UDEMY_ST32F103_B_L.png" alt="STM32" class="hover-image"/>
+                            <img src="./images/Project STM32F103C8T6/STM32F103C8T6.png" alt="STM32" />
+                            <img src="./images/Project STM32F103C8T6/STM32F103C8T6_B.png" alt="STM32" class="hover-image"/>
                         </div>
                     </div>
                 </div>
