@@ -16,7 +16,7 @@
 
   #hamburger-nav {
     display: flex;
-    height: 8vh;
+    height: 30vh;
   }
   .hamburger-position{
     display:flex;
@@ -84,6 +84,7 @@
   #profile {
     height: auto;
     margin-bottom: 0;
+    margin-top: 0;
   }
 
   #about {
