@@ -444,6 +444,23 @@ article .icon {
 
 }
 
+/* GALLERY */
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.gallery-item{
+    /* border: rgb(53,53,53) 0.1rem solid; */
+    margin: 0.05rem;
+    /* border-color: rgb(163, 163, 163); */
+    
+}
+.gallery-container img{
+    width: 400px;
+    height: auto;
+
+}  
 
 
 
