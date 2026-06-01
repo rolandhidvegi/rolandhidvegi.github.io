@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altium Minisumo - Roland Hidvegi</title>
+    <link rel="stylesheet" href="../subpage-style.css">
+    <link rel="stylesheet" href="../mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="name-logo">Roland Hidvégi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#toolkit">Toolkit</a></li>
+                <li><a href="../#projects">Projects</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="../#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="../#toolkit" onclick="toggleMenu()">Toolkit</a></li>
+                    <li><a href="../#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="../#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="name-logo">Roland Hidvégi</div>
+    </nav>
+
+    <section style="margin: 0 10rem; min-height: fit-content; padding-top: 4vh;">
+        <a href="../#projects" class="back-button">← Back to Projects</a>
+
+        <h1 class="title">Altium - Minisumo Mechatronics Education Day 2024</h1>
+
+        <div class="project-hero">
+            <img src="../images/Project_Altium_MinisumoZEM2024/MinisumoZEM2024_Top.png" alt="Mini Sumo PCB top view">
+        </div>
+
+        <div class="project-details">
+            <p class="section__text__p1">Compact Competition PCB</p>
+
+            <div class="project-section">
+                <h3>Description</h3>
+                <p>
+                    This Altium design is a compact minisumo robot control board created for the Mechatronics Education Day 2024.
+                    The board is optimized for motor control, sensor integration, and reliable power delivery in a compact chassis.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Compact PCB layout for a minisumo robot</li>
+                    <li>Motor driver and power distribution for high current loads</li>
+                    <li>Sensor connectors for edge detection and distance sensing</li>
+                    <li>Robust routing for return currents and power planes</li>
+                    <li>Clear silkscreen and mounting holes for assembly
+                    </li>
+                </ul>
+            </div>
+
+            <div class="project-images">
+                <img src="../images/Project_Altium_MinisumoZEM2024/MinisumoZEM2024_Front.png" alt="Mini Sumo PCB front view">
+                <img src="../images/Project_Altium_MinisumoZEM2024/MinisumoZEM2024_Bottom.png" alt="Mini Sumo PCB back view">
+                <img src="../images/Project_Altium_MinisumoZEM2024/MinisumoZEM2024_TopL.png" alt="Mini Sumo PCB">
+                <img src="../images/Project_Altium_MinisumoZEM2024/MinisumoZEM2024_BottomL.png" alt="Mini Sumo PCB">
+                <img src="../images/Project_Altium_MinisumoZEM2024/MinisumoZEM2024_L1.png" alt="Mini Sumo PCB">
+                <img src="../images/Project_Altium_MinisumoZEM2024/MinisumoZEM2024_L2.png" alt="Mini Sumo PCB">
+            </div>
+
+            <div class="project-section">
+                <h3>Design Highlights</h3>
+                <p>
+                    The board layout prioritizes a short ground return path and carefully placed components.
+                    Power and signal traces are separated to reduce noise and ensure stable motor control.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h3>Design Tools</h3>
+                <p>
+                    <strong>EDA Software:</strong> Altium Designer<br>
+                    <strong>Project Focus:</strong> Mini Sumo competition electronics<br>
+                    <strong>Board Layers:</strong> 2-layer PCB
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h3>Learning Outcomes</h3>
+                <p>
+                    This project improved my skills in compact PCB design, high-current routing, and the integration of sensors and actuators for mobile robotics.
+                </p>
+            </div>
+        </div>
+
+        <a href="../#projects" class="back-button" style="margin-top: 3rem;">← Back to Projects</a>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="../#about">About</a></li>
+                    <li><a href="../#toolkit">Toolkit</a></li>
+                    <li><a href="../#projects">Projects</a></li>
+                    <li><a href="../#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2026 Roland Hidvégi. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-modal-content">
+            <button class="lightbox-arrow lightbox-prev">&#10094;</button>
+            <img class="lightbox-image" src="" alt="">
+            <button class="lightbox-arrow lightbox-next">&#10095;</button>
+        </div>
+        <div class="lightbox-counter"><span id="current-image">1</span> / <span id="total-images">1</span></div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        const lightboxModal = document.getElementById('lightbox-modal');
+        const lightboxImage = document.querySelector('.lightbox-image');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        const lightboxPrev = document.querySelector('.lightbox-prev');
+        const lightboxNext = document.querySelector('.lightbox-next');
+        const currentImageSpan = document.getElementById('current-image');
+        const totalImagesSpan = document.getElementById('total-images');
+
+        const projectImages = document.querySelectorAll('.project-images img');
+        let currentImageIndex = 0;
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            lightboxImage.src = projectImages[index].src;
+            lightboxImage.alt = projectImages[index].alt;
+            lightboxModal.classList.add('active');
+            currentImageSpan.textContent = index + 1;
+            totalImagesSpan.textContent = projectImages.length;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightboxModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function showNextImage() {
+            currentImageIndex = (currentImageIndex + 1) % projectImages.length;
+            lightboxImage.src = projectImages[currentImageIndex].src;
+            lightboxImage.alt = projectImages[currentImageIndex].alt;
+            currentImageSpan.textContent = currentImageIndex + 1;
+        }
+
+        function showPrevImage() {
+            currentImageIndex = (currentImageIndex - 1 + projectImages.length) % projectImages.length;
+            lightboxImage.src = projectImages[currentImageIndex].src;
+            lightboxImage.alt = projectImages[currentImageIndex].alt;
+            currentImageSpan.textContent = currentImageIndex + 1;
+        }
+
+        projectImages.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                openLightbox(index);
+            });
+        });
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxNext.addEventListener('click', showNextImage);
+        lightboxPrev.addEventListener('click', showPrevImage);
+
+        lightboxModal.addEventListener('click', (e) => {
+            if (e.target === lightboxModal) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightboxModal.classList.contains('active')) return;
+            if (e.key === 'ArrowRight') showNextImage();
+            if (e.key === 'ArrowLeft') showPrevImage();
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+
+</html>
