@@ -341,9 +341,9 @@
                     <div class="project-details-left">
                         <div class="content">
                             <h2>Back-EMF Motor Driver</h2>
-                            <p>This motor driver was designed with the purpose of providing an extremely useful educational platform and to 
-                                control and EDF (Electric-Ducted-Fan) for a line follower robot that participated in the 2025 Mechatronics 
-                                Education Day Competition in Craiova, Romania. <br>
+                            <p>This motor driver was designed with the purpose of providing me with an extremely useful educational platform and to 
+                                control an EDF (Electric-Ducted-Fan) for a line follower robot that participated in the 2025 Mechatronics 
+                                Education Days competition in Craiova, Romania. It was the only BLDC motor driver and was regarded as the highest technical achievement.<br>
                                 Consisting of 6 N-Channel MOSFETs, 3 DGD05473FNQ Diodes Incorporated gate drivers and an ATmega328P 
                                 microcontroller, this driver implemented its control based on back-EMF zero-crossing detection with the internal comparator of the MCU.
                             </p>
@@ -363,7 +363,11 @@
                     <div class="project-details-right">
                         <div class="content">
                             <h2>IR Sensor Array for Line Follower Robot</h2>
-                            <p>IR Sensor Array for Line Follower Turbo robot PCB. IR Sensor Array for Line Follower Turbo robot PCB. IR Sensor Array for Line Follower Turbo robot PCB. IR Sensor Array for Line Follower Turbo robot PCB. IR Sensor Array for Line Follower Turbo robot PCB. IR Sensor Array for Line Follower Turbo robot PCB.
+                            <p>This PCB is for an IR Sensor Array for a Line Follower Turbo robot. It consists of 14 Everlight ITR8307 reflective optical sensors.
+                                The PCB is designed to be mounted in the front of the robot, with the sensors facing downwards to detect the line on the ground. <br>
+                                The board is 150 mm long and has a connector for interfacing via an FFC cable with the main control board of the robot, 
+                                allowing it to provide real-time feedback on the position of the line relative to the robot's trajectory.
+
                             </p>
                         </div>
     
@@ -381,7 +385,11 @@
                     <div class="project-details-left">
                         <div class="content">
                             <h2>Line Follower Turbo Robot</h2>
-                            <p>Line Follower Turbo robot PCB. Line Follower Turbo robot PCB. Line Follower Turbo robot PCB. Line Follower Turbo robot PCB. Line Follower Turbo robot PCB. Line Follower Turbo robot PCB. Line Follower Turbo robot PCB.
+                            <p>Driving two high torque, high speed N30 brushed DC motors with 2 STM integrated H-bridge drivers, 
+                                this line follower turbo robot PCB is powered by an STM Cortex M4 microcontroller. 
+                                Equipped with a 3V3 power regulation IC that converts the 3S LiPo battery's voltage 
+                                and exposing connectors for the EDF and a start/stop module, this board is equiped with advanced PID algorithms for precise control.<br>
+                                It competed in the 2025 Mechatronics Education Day competition held in Craiova, Romania and was the only robot to have a custom-designed EDF turbine motor driver.
                             </p>
                         </div>
     
@@ -400,10 +408,11 @@
                         <div class="content">
                             <h2>CanSat</h2>
                             <p>This is the PCB I am most proud of.<br>
-                            It is the main PCB of the CanSat that participated in the 2023 edition of RCRC. It contains a lot of things tightly packed together, 
-                            such as 2 synchronous step-down switch mode converters for 3.3V and 5V, a microcontroller, a LoRa Module, a microSD conector, and a bunch of sensors:
-                            temperature, humidity, pressure, a 6-axis IMU, particulate matter, CO2, as well as connectivity for a GPS module, a GSM module, a buzzer, a solar irradiance sensor, RS485 soil sensor, 4 analog inputs for
-                            SO<sub>2</sub>, NO<sub>2</sub>, CO, and UV light.
+                            It is the main PCB of the CanSat that participated in the 2023 national phase of the Romanian CanSat and Rocketry Competition. It contains a lot of features tightly packed together, 
+                            such as 2 synchronous step-down switching mode converters for 3V3V and 5V rails, a microcontroller, a LoRa RF module, a microSD conector, and various sensors:
+                            temperature, humidity, pressure, a 6-axis IMU, particulate matter concentration sensor, CO<sub>2</sub> concentration sensor, as well as connectivity for a GPS module, a GSM module, 
+                            a buzzer, a solar irradiance sensor, an RS485 soil sensor, connector for the UV light intensity sensor, and 4 analog inputs for the electrochemical gas sensors that measure the concentration of
+                            SO<sub>2</sub>, NO<sub>2</sub>, CO.
                             </p>
                         </div>
     
@@ -421,12 +430,12 @@
                     <div class="project-details-left">
                         <div class="content">
                             <h2>Gas Sensors - CanSat</h2>
-                            <p>This is the aditional PCB for the special electrochemical gas sensors used in the CanSat.
-                                They are  highly sensitive and selective to the target gas, but are not easy to use.<br>
+                            <p>This is the additional PCB for the special electrochemical gas sensors used in the CanSat.
+                                They are  highly sensitive and selective to the specific target gas, but are not straightforward to use.<br>
                                 This PCB required an enormous amount of research and time to design. <br>
                                 It contains 3 trans-impedance amplifiers (current-to-voltage converters) because 
-                                these sensors have the output in current. Additionally, potentiostatic circuits
-                                maintain the correct bias potential between the sensing and reference electrodes.
+                                these sensors have their output in current, not in voltage. Additionally, potentiostatic circuits
+                                maintains the correct bias potential between the sensing and reference electrodes.
                             </p>
                         </div>
     
@@ -444,8 +453,8 @@
                     <div class="project-details-right">
                         <div class="content">
                             <h2>GroundStation - CanSat</h2>
-                            <p>This is the receiving LoRa radio station for the CanSat. <br>
-                                It contains a LoRa module, an Arduino Nano and a SMA connector for the 7 element Yagi antenna. <br>
+                            <p>This is the receiving LoRa RF radio station for the CanSat. <br>
+                                It contains a LoRa RF module, an Arduino Nano, some status LEDs, and a SMA connector for the special 7 element Yagi antenna. <br>
                             </p>
                         </div>
     
@@ -463,9 +472,10 @@
                     <div class="project-details-left">
                         <div class="content">
                             <h2>Mini Sumo Robot</h2>
-                            <p>This PCB design is lacking any special features; it has an Arduino, a DIY motor driver, 4 connectors for 
-                                color sensors and 4 connectors for distance sensors.<br> 
-                                But it was manually etched from a copper plate with ferric chloride.
+                            <p>This PCB doesn't include any special features, but it was my first manually-etched board, produced using toner-transfer 
+                                and ferric chloride on a copper-plated textolite sheet.<br>
+                                It contains only an Arduino, an external 2-channel motor-driver module, 4 connectors for color sensors 
+                                that detect the edge of the sumo ring, and 4 connectors for distance sensors.
                             </p>
                         </div>
     
@@ -483,8 +493,9 @@
                     <div class="project-details-right">
                         <div class="content">
                             <h2>Altium Project</h2>
-                            <p>This PCB has a MPU-6050 3-axis accelerometer and gyroscope onboard and a connector for attaching an external SPI device on the SPI 1 interface. The connector pins can be reused as GPIO pins as well. <br>
-                                3.3V for supplying the board are provided by an LDO regulator.
+                            <p>This board is my first more complex Altium design. This PCB has an MPU-6050 3-axis accelerometer and gyroscope onboard and 
+                                a connector for attaching an external SPI device on the SPI-1 interface. The connector pins can be reused as GPIO pins, as well. <br>
+                                The 3V3 rail for supplying the board is provided by an LDO regulator.
                             </p>
                         </div>
     
@@ -503,7 +514,11 @@
                         <div class="content">
                             <h2>STM32F405RGT6</h2>
                             <p>This is my first 4 layer PCB.<br>
-                                I chose the STM32F405RGT6 microcontroller because it offers 1 Mbyte of flash memory.</p>
+                                I chose the STM32F405RGT6 microcontroller because it offers 1 Mbyte of flash memory, a powerful Cortex-M4 core with
+                                floating-point support,
+                                generous SRAM, and plenty of peripherals. That combination gives me the headroom to implement advanced control
+                                algorithms, robust communication interfaces, and future firmware updates for following increasingly complex projects.
+                            </p>
                         </div>
     
                         <div class="image-container">
@@ -521,7 +536,7 @@
                             <h2>STM32F103C8T6</h2>
                             <p>This is the first PCB I ever designed. <br>
                                 It is a simple microcontroller with UART and I2C interfaces, with an aditional SWD debugging connector.<br> I must admit that I had a few abandoned attempts with EasyEDA before, 
-                                but this is my first project that is technically viable and would work for sure. Although, this PCB was never physically manufactured.</p>
+                                but this is my first project that is technically viable and would work for sure. However, this PCB was never physically manufactured.</p>
                         </div>
     
                         <div class="image-container">
