@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STM32F103C8T6 - Roland Hidvegi</title>
+    <link rel="stylesheet" href="../subpage-style.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="name-logo">Roland Hidvégi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#toolkit">Toolkit</a></li>
+                <li><a href="../#projects">Projects</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="../#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="../#toolkit" onclick="toggleMenu()">Toolkit</a></li>
+                    <li><a href="../#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="../#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="name-logo">Roland Hidvégi</div>
+    </nav>
+
+    <section style="margin: 0 10rem; min-height: fit-content; padding-top: 4vh;">
+        <a href="../#projects" class="back-button">← Back to Projects</a>
+
+        <h1 class="title">STM32F103C8T6</h1>
+
+        <div class="project-hero">
+            <img src="../images/Project STM32F103C8T6/STM32F103C8T6.png" alt="STM32F103C8T6 PCB">
+        </div>
+
+        <div class="project-details">
+            <p class="section__text__p1">My First PCB Design</p>
+
+            <div class="project-section">
+                <h3>Description</h3>
+                <p>
+                    This is my very first PCB design project. While I had made several abandoned attempts with EasyEDA before,
+                    this is the first project that is technically viable and would actually work if manufactured.
+                    It represents a significant learning milestone in my journey as a PCB designer.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>STM32F103C8T6 ARM Cortex-M3 microcontroller</li>
+                    <li>UART interface with RS-232 connector</li>
+                    <li>I2C interface for sensor communication</li>
+                    <li>SWD debugging connector for in-circuit programming</li>
+                    <li>Crystal oscillator for precise timing</li>
+                    <li>Power supply with filtering</li>
+                    <li>Basic 2-layer PCB design</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h3>Design Journey</h3>
+                <p>
+                    Before this project, I had made several attempts at PCB design in EasyEDA that were ultimately abandoned
+                    due to design errors, routing issues, or incomplete understanding of requirements.
+                    This project benefited from those learning experiences and represents the first successful,
+                    complete design that adheres to proper electronic principles.
+                </p>
+            </div>
+
+            <div class="project-images">
+                <img src="../images/Project STM32F103C8T6/STM32F103C8T6.png" alt="STM32F103C8T6 Front">
+                <img src="../images/Project STM32F103C8T6/STM32F103C8T6_B.png" alt="STM32F103C8T6 Back">
+                <img src="../images/Project STM32F103C8T6/STM32F103C8T6.png" alt="STM32F103C8T6 Front">
+                <img src="../images/Project STM32F103C8T6/STM32F103C8T6_B.png" alt="STM32F103C8T6 Back">
+            </div>
+
+            <div class="project-section">
+                <h3>Interface Implementation</h3>
+                <p>
+                    <strong>UART:</strong> Serial communication interface for debugging and data transfer<br>
+                    <strong>I2C:</strong> Two-wire interface for connecting I2C compatible sensors<br>
+                    <strong>SWD (Serial Wire Debug):</strong> Standard ARM debugging interface for programming and in-circuit debugging<br>
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h3>Microcontroller Specifications</h3>
+                <p>
+                    <strong>Processor:</strong> ARM Cortex-M3 @ 72 MHz<br>
+                    <strong>Flash Memory:</strong> 64 KB<br>
+                    <strong>RAM:</strong> 20 KB<br>
+                    <strong>Peripherals:</strong> UART, SPI, I2C, USB, ADCs<br>
+                    <strong>Package:</strong> 48-pin LQFP
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h3>Learning Outcomes</h3>
+                <p>
+                    This project taught me several critical lessons about PCB design:
+                    <ul>
+                        <li>Proper component selection based on application requirements</li>
+                        <li>Schematic organization and signal flow</li>
+                        <li>Basic PCB layout principles (trace routing, via placement)</li>
+                        <li>Power distribution and decoupling capacitor placement</li>
+                        <li>Interface standards and connector types</li>
+                        <li>Design verification and validation</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h3>Status</h3>
+                <p>
+                    Although this PCB was never physically manufactured, the design is complete and functional.
+                    It serves as an important reference point showing my progression from beginner to intermediate PCB designer.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h3>Design Tools</h3>
+                <p>
+                    <strong>EDA Software:</strong> EasyEDA / KiCad<br>
+                    <strong>Microcontroller:</strong> STM32F1 series<br>
+                    <strong>PCB Technology:</strong> 2-layer board<br>
+                    <strong>Design methodology:</strong> Classic hobbyist design approach
+                </p>
+            </div>
+        </div>
+
+        <a href="../#projects" class="back-button" style="margin-top: 3rem;">← Back to Projects</a>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="../#about">About</a></li>
+                    <li><a href="../#toolkit">Toolkit</a></li>
+                    <li><a href="../#projects">Projects</a></li>
+                    <li><a href="../#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2026 Roland Hidvégi. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-modal-content">
+            <button class="lightbox-arrow lightbox-prev">&#10094;</button>
+            <img class="lightbox-image" src="" alt="">
+            <button class="lightbox-arrow lightbox-next">&#10095;</button>
+        </div>
+        <div class="lightbox-counter"><span id="current-image">1</span> / <span id="total-images">2</span></div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        // Lightbox functionality
+        const lightboxModal = document.getElementById('lightbox-modal');
+        const lightboxImage = document.querySelector('.lightbox-image');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        const lightboxPrev = document.querySelector('.lightbox-prev');
+        const lightboxNext = document.querySelector('.lightbox-next');
+        const currentImageSpan = document.getElementById('current-image');
+        const totalImagesSpan = document.getElementById('total-images');
+
+        let allImages = [];
+        let currentImageIndex = 0;
+
+        // Collect all images from project-images div
+        function initLightbox() {
+            const projectImages = document.querySelectorAll('.project-images img');
+            allImages = Array.from(projectImages);
+            totalImagesSpan.textContent = allImages.length;
+
+            // Add click handlers to all images
+            allImages.forEach((img, index) => {
+                img.addEventListener('click', () => openLightbox(index));
+            });
+        }
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            lightboxImage.src = allImages[index].src;
+            lightboxImage.alt = allImages[index].alt;
+            lightboxModal.classList.add('active');
+            currentImageSpan.textContent = index + 1;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightboxModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function showPrevImage() {
+            currentImageIndex = (currentImageIndex - 1 + allImages.length) % allImages.length;
+            lightboxImage.src = allImages[currentImageIndex].src;
+            lightboxImage.alt = allImages[currentImageIndex].alt;
+            currentImageSpan.textContent = currentImageIndex + 1;
+        }
+
+        function showNextImage() {
+            currentImageIndex = (currentImageIndex + 1) % allImages.length;
+            lightboxImage.src = allImages[currentImageIndex].src;
+            lightboxImage.alt = allImages[currentImageIndex].alt;
+            currentImageSpan.textContent = currentImageIndex + 1;
+        }
+
+        // Event listeners
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxPrev.addEventListener('click', showPrevImage);
+        lightboxNext.addEventListener('click', showNextImage);
+
+        // Close on outside click
+        lightboxModal.addEventListener('click', (e) => {
+            if (e.target === lightboxModal) {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!lightboxModal.classList.contains('active')) return;
+            if (e.key === 'ArrowLeft') showPrevImage();
+            if (e.key === 'ArrowRight') showNextImage();
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // Initialize on page load
+        initLightbox();
+    </script>
+</body>
+
+</html>

@@ -15,7 +15,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#toolkit">Toolkit</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -23,30 +23,27 @@
     </nav>
     
     <nav id="hamburger-nav">
-        <div class="name-logo">Roland Hidvégi</div>
         <div class="hamburger-menu">
-            <div class="hamburger-position">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <!-- Actual links that will be opened -->
-            <article>
-                <div class="menu-links">
+            <div class="menu-links">
+                <ul>
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#toolkit" onclick="toggleMenu()">Toolkit</a></li>
                     <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
-            </article>
+                </ul>
+            </div>
         </div>
+        <div class="name-logo">Roland Hidvégi</div>
     </nav>
 
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./images/CVPictureHidvegiRoland3.jpeg" alt="Roland Hidvegi profile picture" class="shape">
+        <div class="section__medallion-pic-container">
+            <img src="./images/LinkedInPicture.jpeg" alt="Roland Hidvegi profile picture" class="shape">
         </div>
         <div class="section__text">
             <p class="section__text__p3">Hello, I'm</p>
@@ -65,64 +62,94 @@
                     onclick="window.open('https://www.linkedin.com/in/roland-hidv%C3%A9gi-a24098233/', '_blank')">
                 <img src="./images/github.png" alt="My GitHub profile" class="icon"
                     onclick="window.open('https://github.com/rolandhidvegi', '_blank')">
-                <img src="./images/web.png" alt="LinkTree" style=" cursor: pointer; height: 2.2rem;" 
+                <img src="./images/web.png" alt="LinkTree" class="icon" 
                     onclick="window.open('https://linktr.ee/we4can.space', '_blank')">
             </div>
         </div>
+        <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#about'" />
     </section>
 
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
-            <!-- ABOUT IMAGE -->
             <div class="section__pic-container">
                 <img src="./images/About5.jpg" alt="Profile picture" class="about-pic" />
             </div>
-            <!-- ABOUT TEXT -->
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="./images/experience.png" alt="Experience icon" class="icon" />
                         <h3>Experience</h3>
-                        <p>Two internships <br> Product Engineering & Automation</p>
+                        <p>More than 2 years as <br> <b>Hardware Development Engineer</b> at</p>
+                        <div class="company-logos">
+                            <img src="./images/Forvia_Hella_Logo.png" alt="Forvia Hella logo" class="company-logo" style="height: 6rem;"
+                            onclick="window.open('https://www.hella.com/en/', '_blank')" />
+                            <p>and</p>
+                            <img src="./images/Ebm-Papst_Logo.png" alt="EBM-PAPST logo" class="company-logo" style="height: 4rem;"
+                            onclick="window.open('https://www.ebmpapst.com/de/en/home.html', '_blank')" />
+                        </div>
                     </div>
 
                     <div class="details-container">
-                        <img src="./images/education.png" alt="Experience icon" class="icon" />
+                        <img src="./images/education.png" alt="Education icon" class="icon" />
 
                         <h3>Education</h3>
-                        <p>B.Sc. Mechatronics 2021 — ongoing <br>C.N. Emanuil Gojdu 2017 — 2021</p>
+                        <p>B.Sc. Mechatronics and Robotics 2021 — 2025 <br>C.N. Emanuil Gojdu 2017 — 2021</p>
+                        <div class="company-logos">
+                            <img src="./images/CAE_Logo.png" alt="Cambridge CAE" style="height: 6rem;" />
+                            <p>Cambridge Certificate in Advanced English <br>Grade A | <b>C2 Proficiency</b></p>
+                        </div>
                     </div>
 
                 </div>
                 <div class="text-container">
-                    <p>I'm a 3rd year student at the University of Oradea, studying Mechatronics at the Faculty of Management and
-                        Technological Engineering. <br>
-                        I graduated from the National College "Emanuil Gojdu" Oradea in 2021, where I studied Natural Sciences. <br><br>
-                        In the summer of <b>2022</b>, I did an internship at the Product Engineering department of <b>Plexus Oradea</b>, where I learned a lot about PCB manufacturing. <br>
-                        In the summer of <b>2023</b>, I did an internship at the Automation department of <b>Golde Oradea</b>, where I learned a lot about PLC programming and I made the electrical and pneumatic automation part for a testing equipment. <br>
+                    <p>I graduated from the National College "Emanuil Gojdu" Oradea in 2021, where I studied Natural Sciences (GPA
+                        9.87/10; Baccalaureate GPA 9.6/10).<br>
+
+                        I hold a Bachelor's degree in <b>Mechatronics and Robotics</b> from the University of Oradea, Romania (240 ECTS,
+                        GPA 9.79/10; Thesis GPA 10/10). <br><br>
+
+
+                        In the summer of <b>2022</b>, I completed an internship in the <b>Product Engineering</b> department at <b>Plexus Corp.</b>
+                        Oradea, where I gained hands-on experience with PCB manufacturing processes.<br>
+                        
+                        In the summer of <b>2023</b>, I completed an internship in the <b>Automation</b> department at <b>CIE Golde</b> Oradea, where 
+                        I worked with PLC programming and developed the electrical and pneumatic automation for a testing equipment.<br><br>
+
+
+                        During my studies, I participated in various technical projects and competitions. The most notable was the 
+                        qualification in the national phase of the <b>2023 Romanian CanSat and Rocketry</b> competition.<br><br>
+
+
+                        In <b>2023</b> I initially joined <b>Forvia Hella</b> Oradea as an intern in the <b>Battery Management Systems</b> development department
+                        and later advanced to the
+                        <b>DC‑DC Converters</b> development team, where I worked as a <b>Junior Hardware Development Engineer</b>.<br><br>
+                        Since <b>2025</b> I work as <b>Junior Hardware Development Engineer</b> at <b>EBM-PAPST</b> Oradea, where I develop and validate electronic
+                        control systems for three-phase
+                        BLDC motor drives used in industrial ventilation and applications.
                     </p>
                 </div>
             </div>
         </div>
         <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow"
-            onclick="location.href='./#experience'" />
+            onclick="location.href='./#toolkit'" />
     </section>
 
-    <section id="experience">
+    <section id="toolkit">
 
         <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <h1 class="title">Engineering Toolkit</h1>
         
-        <div class="experience-details-container">
+        <div class="toolkit-details-container">
             <div class="about-containers">
                 <!-- first box EDA -->
                 <div class="details-container">
-                    <h2 class="experience-sub-title">EDA</h2>
+                    <h2 class="toolkit-sub-title">EDA</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
                             <div>
                                 <!-- <h3>KiCad</h3> -->
                                 <img src="./images/kicad.png" alt="KiCad logo" style="height: 2rem;" />
@@ -130,21 +157,29 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
                             <div>
                                 <!-- <h3>Altium Designer</h3> -->
                                 <img src="./images/altium.png" alt="Altium logo" style="height: 3rem;" />
                                 <p>Basic</p>
                             </div>
                         </article>
+                        <article style="grid-column: 1 / -1; justify-self: center;">
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
+                            <div>
+                                <!-- <h3>MathCad</h3> -->
+                                <img src="./images/MathCad_Logo.png" alt="MathCad logo" style="height: 4rem;" />
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
                 <!-- second box Programming-->
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Programming</h2>
+                    <h2 class="toolkit-sub-title">Programming</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
                             <div>
                                 <!-- <h3>C++</h3> -->
                                 <img src="./images/cpp.png" alt="CPP logo" style="height: 3rem;" />
@@ -152,7 +187,7 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
                             <div>
                                 <!-- <h3>C#</h3> -->
                                 <img src="./images/csharp.png" alt="C# logo" style="height: 3rem;" />
@@ -160,7 +195,15 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
+                            <div>
+                                <!-- <h3>Python</h3> -->
+                                <img src="./images/Python_logo.png" alt="Python logo" style="height: 3rem;" />
+                                <p>Basic</p>
+                            </div>
+                        </article>  
+                        <article>
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
                             <div>
                                 <!-- <h3>HTML</h3> -->
                                 <img src="./images/html.png" alt="HTML logo" style="height: 4rem;" />
@@ -169,7 +212,7 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
                             <div>
                                 <!-- <h3>CSS</h3> -->
                                 <img src="./images/css.png" alt="CSS logo" style="height: 4rem;" />
@@ -177,7 +220,7 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
                             <div>
                                 <!-- <h3>Git</h3> -->
                                 <img src="./images/git.png" alt="Git logo" style="height: 2rem;" />
@@ -189,10 +232,10 @@
                 
                 <!-- third box CAD-->
                 <div class="details-container">
-                    <h2 class="experience-sub-title">CAD</h2>
+                    <h2 class="toolkit-sub-title">CAD</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
                             <div>
                                 <!-- <h3>Autodesk Inventor</h3> -->
                                 <img src="./images/inventor.jpg" alt="Inventor logo" style="height: 2rem;" />
@@ -200,40 +243,158 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
                             <div>
                                 <!-- <h3>Fusion 360</h3> -->
                                 <img src="./images/fusion360.jpg" alt="Fusion logo" style="height: 3rem;" />
-                                <p>Intermediate</p>
+                                <p>Basic</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
                             <div>
                                 <!-- <h3>Onshape</h3> -->
                                 <img src="./images/onshape.png" alt="Onshape logo" style="height: 2rem;" />
                                 <p>Basic</p>
                             </div>
                         </article>
-                    </div>
+                        <article>
+                            <img src="./images/checkmark.png" alt="Toolkit icon" class="icon" />
+                            <div>
+                                <!-- <h3>SolidWorks</h3> -->
+                                <img src="./images/SolidWorks_Logo.png" alt="SolidWorks logo" style="height: 2rem;" />
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>                    
                 </div>
-                
             </div>
-            
         </div>
-
-        
         <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow"
         onclick="location.href='./#projects'" />
     </section>
     
     <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
+        <p class="section__text__p1">Browse My</p>
         <h1 class="title">Projects</h1>
     
-        <div class="experience-details-container">
+        <div class="toolkit-details-container">
             <div class="all-projects-container">
+
+                <!-- Sample Right Project -->
+                <!-- <a href="./project-pages/sample-project.html" class="project-link">
+                <div class="project-container">
+                    <div class="project-details-right">
+                        <div class="content">
+                            <h2>Sample Project</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.
+                            </p>
+                        </div>
+    
+                        <div class="image-container">
+                            <img src="./images/PCB_picture_1.png" alt="PCB Picture 1" />
+                            <img src="./images/PCB_picture_2.png" alt="PCB Picture 2" class="hover-image"/>
+                        </div>
+                    </div>
+                </div>
+                </a> -->
+                
+                <!-- Sample Left Project -->
+                <!-- <a href="./project-pages/sample-project.html" class="project-link">
+                <div class="project-container">
+                    <div class="project-details-left">
+                        <div class="content">
+                            <h2>Sample Project</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.
+                            </p>
+                        </div>
+    
+                        <div class="image-container">
+                            <img src="./images/PCB_picture_1.png" alt="PCB Picture 1" />
+                            <img src="./images/PCB_picture_2.png" alt="PCB Picture 2" class="hover-image"/>
+                        </div>
+                    </div>
+                </div>
+                </a> -->
+
                 <!-- Project 1 -->
+                <a href="./project-pages/FOC-motor-driver.html" class="project-link">
+                <div class="project-container">
+                    <div class="project-details-right">
+                        <div class="content">
+                            <h2>FOC Motor Driver</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.
+                            </p>
+                        </div>
+    
+                        <div class="image-container">
+                            <img src="./images/PCB_picture_1.png" alt="FOC Motor Driver" />
+                            <img src="./images/PCB_picture_2.png" alt="FOC Motor Driver" class="hover-image"/>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                
+                <!-- Project 2 -->
+                <a href="./project-pages/back-EMF-motor-driver.html" class="project-link">
+                <div class="project-container">
+                    <div class="project-details-left">
+                        <div class="content">
+                            <h2>Back-EMF Motor Driver</h2>
+                            <p>This motor driver was designed with the purpose of providing an extremely useful educational platform and to 
+                                control and EDF (Electric-Ducted-Fan) for a line follower robot that participated in the 2025 Mechatronics 
+                                Education Day Competition in Craiova, Romania. <br>
+                                Consisting of 6 N-Channel MOSFETs, 3 DGD05473FNQ Diodes Incorporated gate drivers and an ATmega328P 
+                                microcontroller, this driver implemented its control based on back-EMF zero-crossing detection with the internal comparator of the MCU.
+                            </p>
+                        </div>
+    
+                        <div class="image-container">
+                            <img src="./images/ProjectBack-EMFMotorDriver/Simple_ESC_kicad_V3_F.png" alt="Back-EMF Motor Driver" />
+                            <img src="./images/ProjectBack-EMFMotorDriver/Simple_ESC_kicad_V3_B.png" alt="Back-EMF Motor Driver" class="hover-image"/>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="./project-pages/ir-array-line-follower-robot.html" class="project-link">
+                <div class="project-container">
+                    <div class="project-details-right">
+                        <div class="content">
+                            <h2>IR Sensor Array for Line Follower Robot</h2>
+                            <p>IR Sensor Array for Line Follower Turbo robot PCB. IR Sensor Array for Line Follower Turbo robot PCB. IR Sensor Array for Line Follower Turbo robot PCB. IR Sensor Array for Line Follower Turbo robot PCB. IR Sensor Array for Line Follower Turbo robot PCB. IR Sensor Array for Line Follower Turbo robot PCB.
+                            </p>
+                        </div>
+    
+                        <div class="image-container">
+                            <img src="./images/ProjectIRArrayLineFollowerTurbo/LineFollowerTurbo_IR_Array_F.png" alt="IR Sensor Array for Line Follower Turbo Robot" />
+                            <img src="./images/ProjectIRArrayLineFollowerTurbo/LineFollowerTurbo_IR_Array_B.png" alt="IR Sensor Array for Line Follower Turbo Robot" class="hover-image"/>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                
+                <!-- Project 4 -->
+                <a href="./project-pages/line-follower-turbo-robot.html" class="project-link">
+                <div class="project-container">
+                    <div class="project-details-left">
+                        <div class="content">
+                            <h2>Line Follower Turbo Robot</h2>
+                            <p>Line Follower Turbo robot PCB. Line Follower Turbo robot PCB. Line Follower Turbo robot PCB. Line Follower Turbo robot PCB. Line Follower Turbo robot PCB. Line Follower Turbo robot PCB. Line Follower Turbo robot PCB.
+                            </p>
+                        </div>
+    
+                        <div class="image-container">
+                            <img src="./images/ProjectLineFollowerTurboZEM2025/LineFollowerTurbo_Top.png" alt="Line Follower Turbo PCB Front" />
+                            <img src="./images/ProjectLineFollowerTurboZEM2025/LineFollowerTurbo_Bottom.png" alt="Line Follower Turbo PCB Back" class="hover-image"/>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                
+                <!-- Project 5 -->
+                <a href="./project-pages/cansat.html" class="project-link">
                 <div class="project-container">
                     <div class="project-details-right">
                         <div class="content">
@@ -248,12 +409,14 @@
     
                         <div class="image-container">
                             <img src="./images/Project CanSat/CanSatV4.0.0_MainPCB.png" alt="CanSat" />
-                            <img src="./images/Project CanSat/CanSatV4.0.0_MainPCB_B.png" alt="STM32" class="hover-image"/>
+                            <img src="./images/Project CanSat/CanSatV4.0.0_MainPCB_B.png" alt="CanSat" class="hover-image"/>
                         </div>
                     </div>
                 </div>
+                </a>
                 
-                <!-- Project 2 -->
+                <!-- Project 6 -->
+                <a href="./project-pages/gas-sensors.html" class="project-link">
                 <div class="project-container">
                     <div class="project-details-left">
                         <div class="content">
@@ -269,12 +432,14 @@
     
                         <div class="image-container">
                             <img src="./images/Project CanSat/CanSatV4.0.0_Gases.png" alt="Gas sensors" />
-                            <img src="./images/Project CanSat/CanSatV4.0.0_Gases_B.png" alt="STM32" class="hover-image"/>
+                            <img src="./images/Project CanSat/CanSatV4.0.0_Gases_B.png" alt="Gas sensors" class="hover-image"/>
                         </div>
                     </div>
                 </div>
+                </a>
                 
-                <!-- Project 3 -->
+                <!-- Project 7 -->
+                <a href="./project-pages/ground-station.html" class="project-link">
                 <div class="project-container">
                     <div class="project-details-right">
                         <div class="content">
@@ -290,8 +455,10 @@
                         </div>
                     </div>
                 </div>
+                </a>
 
-                <!-- Project 4 -->
+                <!-- Project 8 -->
+                <a href="./project-pages/mini-sumo.html" class="project-link">
                 <div class="project-container">
                     <div class="project-details-left">
                         <div class="content">
@@ -308,8 +475,10 @@
                         </div>
                     </div>
                 </div>
+                </a>
 
-                <!-- Project 5 -->
+                <!-- Project 9 -->
+                <a href="./project-pages/altium-project.html" class="project-link">
                 <div class="project-container">
                     <div class="project-details-right">
                         <div class="content">
@@ -325,8 +494,10 @@
                         </div>
                     </div>
                 </div>
+                </a>
 
-                <!-- Project 6 -->
+                <!-- Project 10 -->
+                <a href="./project-pages/stm32-f405.html" class="project-link">
                 <div class="project-container">
                     <div class="project-details-left">
                         <div class="content">
@@ -341,7 +512,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 7 -->
+                </a>
+                <!-- Project 11 -->
+                <a href="./project-pages/stm32-f103.html" class="project-link">
                 <div class="project-container">
                     <div class="project-details-right">
                         <div class="content">
@@ -357,11 +530,9 @@
                         </div>
                     </div>
                 </div>
+                </a>
 
             </div>
-    
-    
-    
     
         </div>
     
@@ -382,7 +553,7 @@
                 alt="Email icon" class="icon email-icon"
                 onclick="window.open('mailto:roland0hidvegi@gmail.com', '_blank')"
                 />
-                <p><a href="mailto:rolandroland0hidvegi@gmail.com" target="_blank">Email</a></p>
+                <p><a href="mailto:roland0hidvegi@gmail.com" target="_blank">Email</a></p>
                 
             </div>
 
@@ -401,16 +572,38 @@
           <div class="nav-links-container">
             <ul class="nav-links">
               <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
+              <li><a href="#toolkit">Toolkit</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </nav>
-        <p>Copyright &#169; 2023 Roland Hidvégi. All Rights Reserved. </p>
+        <p>Copyright &#169; 2026 Roland Hidvégi. All Rights Reserved. </p>
     </footer>
     
     <script src="script.js"></script>
+    <script>
+        // Save scroll position before navigating to project pages
+        document.querySelectorAll('.project-link').forEach(link => {
+            link.addEventListener('click', function() {
+                // Save current scroll position to sessionStorage
+                sessionStorage.setItem('projectsScrollPosition', window.scrollY);
+            });
+        });
+
+        // Restore scroll position when returning from project page
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedPosition = sessionStorage.getItem('projectsScrollPosition');
+            if (savedPosition !== null) {
+                // Restore the saved position after a small delay to ensure DOM is ready
+                setTimeout(() => {
+                    window.scrollTo(0, parseInt(savedPosition));
+                }, 100);
+                // Clear the saved position after restoring it
+                sessionStorage.removeItem('projectsScrollPosition');
+            }
+        });
+    </script>
 </body>
 
 </html>

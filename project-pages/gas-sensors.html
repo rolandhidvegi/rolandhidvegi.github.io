@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Sensors - Roland Hidvegi</title>
+    <link rel="stylesheet" href="../subpage-style.css">    <link rel="stylesheet" href="../mediaqueries.css"></head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="name-logo">Roland Hidvégi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#toolkit">Toolkit</a></li>
+                <li><a href="../#projects">Projects</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="../#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="../#toolkit" onclick="toggleMenu()">Toolkit</a></li>
+                    <li><a href="../#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="../#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="name-logo">Roland Hidvégi</div>
+    </nav>
+
+    <section style="margin: 0 10rem; min-height: fit-content; padding-top: 4vh;">
+        <a href="../#projects" class="back-button">← Back to Projects</a>
+
+        <h1 class="title">Gas Sensors - CanSat</h1>
+
+        <div class="project-hero">
+            <img src="../images/Project CanSat/CanSatV4.0.0_Gases.png" alt="Gas Sensors PCB">
+        </div>
+
+        <div class="project-details">
+            <p class="section__text__p1">Specialized Sensor Interface</p>
+
+            <div class="project-section">
+                <h3>Description</h3>
+                <p>
+                    This is the additional PCB designed specifically for interfacing electrochemical gas sensors used in the CanSat.
+                    These sensors are highly sensitive and selective to target gases, but require careful signal conditioning and biasing.
+                    This PCB represents the culmination of extensive research and design iteration.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>3 Trans-impedance amplifiers (current-to-voltage converters)</li>
+                    <li>Potentiostatic bias circuits for electrochemical sensors</li>
+                    <li>High-impedance front-end design for sensitive measurements</li>
+                    <li>Precise voltage reference circuits</li>
+                    <li>Low-noise signal conditioning</li>
+                    <li>Configurable gain settings</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h3>Technical Challenge</h3>
+                <p>
+                    Electrochemical gas sensors operate on a current mode, typically in the nanoampere to microampere range.
+                    This required designing sensitive trans-impedance amplifiers with low input bias current and high gain.
+                    The potentiostatic circuits maintain a precise bias potential between the sensing and reference electrodes,
+                    which is critical for accurate and stable sensor response.
+                </p>
+            </div>
+
+            <div class="project-images">
+                <img src="../images/Project CanSat/CanSatV4.0.0_Gases.png" alt="Gas Sensors Front">
+                <img src="../images/Project CanSat/CanSatV4.0.0_Gases_B.png" alt="Gas Sensors Back">
+                <img src="../images/Project CanSat/CanSatV4.0.0_Gases.png" alt="Gas Sensors Front">
+                <img src="../images/Project CanSat/CanSatV4.0.0_Gases_B.png" alt="Gas Sensors Back">
+            </div>
+
+            <div class="project-section">
+                <h3>Design Approach</h3>
+                <p>
+                    This project involved researching electrochemical sensors, understanding their characteristics, and designing
+                    appropriate analog front-end circuits. The PCB layout was critical to minimize noise coupling and ensure
+                    stable operation. Multiple design iterations were necessary to achieve the desired performance.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h3>Tools Used</h3>
+                <p>
+                    <strong>EDA:</strong> KiCad<br>
+                    <strong>Design:</strong> Analog circuit design, signal conditioning, 2-layer PCB<br>
+                    <strong>Research:</strong> Electrochemical sensor datasheets, analog design principles
+                </p>
+            </div>
+        </div>
+
+        <a href="../#projects" class="back-button" style="margin-top: 3rem;">← Back to Projects</a>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="../#about">About</a></li>
+                    <li><a href="../#toolkit">Toolkit</a></li>
+                    <li><a href="../#projects">Projects</a></li>
+                    <li><a href="../#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2026 Roland Hidvégi. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-modal-content">
+            <button class="lightbox-arrow lightbox-prev">&#10094;</button>
+            <img class="lightbox-image" src="" alt="">
+            <button class="lightbox-arrow lightbox-next">&#10095;</button>
+        </div>
+        <div class="lightbox-counter"><span id="current-image">1</span> / <span id="total-images">2</span></div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        // Lightbox functionality
+        const lightboxModal = document.getElementById('lightbox-modal');
+        const lightboxImage = document.querySelector('.lightbox-image');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        const lightboxPrev = document.querySelector('.lightbox-prev');
+        const lightboxNext = document.querySelector('.lightbox-next');
+        const currentImageSpan = document.getElementById('current-image');
+        const totalImagesSpan = document.getElementById('total-images');
+
+        let allImages = [];
+        let currentImageIndex = 0;
+
+        // Collect all images from project-images div
+        function initLightbox() {
+            const projectImages = document.querySelectorAll('.project-images img');
+            allImages = Array.from(projectImages);
+            totalImagesSpan.textContent = allImages.length;
+
+            // Add click handlers to all images
+            allImages.forEach((img, index) => {
+                img.addEventListener('click', () => openLightbox(index));
+            });
+        }
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            lightboxImage.src = allImages[index].src;
+            lightboxImage.alt = allImages[index].alt;
+            lightboxModal.classList.add('active');
+            currentImageSpan.textContent = index + 1;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightboxModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function showPrevImage() {
+            currentImageIndex = (currentImageIndex - 1 + allImages.length) % allImages.length;
+            lightboxImage.src = allImages[currentImageIndex].src;
+            lightboxImage.alt = allImages[currentImageIndex].alt;
+            currentImageSpan.textContent = currentImageIndex + 1;
+        }
+
+        function showNextImage() {
+            currentImageIndex = (currentImageIndex + 1) % allImages.length;
+            lightboxImage.src = allImages[currentImageIndex].src;
+            lightboxImage.alt = allImages[currentImageIndex].alt;
+            currentImageSpan.textContent = currentImageIndex + 1;
+        }
+
+        // Event listeners
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxPrev.addEventListener('click', showPrevImage);
+        lightboxNext.addEventListener('click', showNextImage);
+
+        // Close on outside click
+        lightboxModal.addEventListener('click', (e) => {
+            if (e.target === lightboxModal) {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!lightboxModal.classList.contains('active')) return;
+            if (e.key === 'ArrowLeft') showPrevImage();
+            if (e.key === 'ArrowRight') showNextImage();
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // Initialize on page load
+        initLightbox();
+    </script>
+</body>
+
+</html>
