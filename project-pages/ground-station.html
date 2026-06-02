@@ -50,13 +50,18 @@
         </div>
 
         <div class="project-details">
-            <p class="section__text__p1">LoRa Reception System</p>
+            <p class="section__text__p1">Lorem ipsum dolor sit amet.</p>
 
             <div class="project-section">
                 <h3>Description</h3>
                 <p>
                     This is the receiving LoRa radio station designed to communicate with the CanSat during flight and payload descent.
                     It serves as the ground control point for the entire mission, receiving telemetry data transmitted from the balloon platform.
+                </p>
+                <p>
+                    The GroundStation receives data packets from the CanSat at regular intervals during the flight.
+                    The Arduino processes incoming data and can display it locally or transmit to a computer for real-time monitoring.
+                    The directional antenna provides improved signal strength and allows for tracking the payload's location.
                 </p>
             </div>
 
@@ -71,13 +76,10 @@
                 </ul>
             </div>
 
+            <!-- Functional Purpose content merged into Description above -->
+
             <div class="project-section">
-                <h3>Functional Purpose</h3>
-                <p>
-                    The GroundStation receives data packets from the CanSat at regular intervals during the flight.
-                    The Arduino processes incoming data and can display it locally or transmit to a computer for real-time monitoring.
-                    The directional antenna provides improved signal strength and allows for tracking the payload's location.
-                </p>
+                <h3>Design Highlights</h3>
             </div>
 
             <div class="project-images">
@@ -87,21 +89,41 @@
                 <img src="../images/Project CanSat/GroundStation_B.png" alt="GroundStation Back">
             </div>
 
+            <!-- Antenna Design moved into Technical Challenges -->
+
             <div class="project-section">
-                <h3>Antenna Design</h3>
+                <h3>Technical Challenges</h3>
+                <p>
+                    The station requires careful antenna alignment and robust packet handling to maintain telemetry during flight.
+                    Ensuring reliable reception in varied environmental conditions was an important design consideration.
+                </p>
                 <p>
                     The 7-element Yagi antenna provides directional gain and improved signal-to-noise ratio compared to omnidirectional antennas.
                     This allows for better communication range and the ability to orient the station toward the balloon to maximize signal strength.
                 </p>
             </div>
 
+            <!-- Tools Used content will be preserved inside Learning Outcomes -->
+
             <div class="project-section">
-                <h3>Tools Used</h3>
+                <h3>Design Tools</h3>
+                <ul>
+                    <li>KiCad</li>
+                    <li>Altium</li>
+                    <li>Mathcad</li>
+                    <li>VS Code</li>
+                    <li>SolidWorks</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h3>Learning Outcomes</h3>
                 <p>
-                    <strong>EDA:</strong> KiCad<br>
-                    <strong>Microcontroller:</strong> Arduino Nano<br>
-                    <strong>Communication:</strong> LoRa protocol<br>
-                    <strong>Antenna:</strong> 7-element Yagi design
+                    <strong>Tools & Technologies:</strong><br>
+                    <strong>EDA:</strong> KiCad; <strong>Microcontroller:</strong> Arduino Nano; <strong>Communication:</strong> LoRa protocol; <strong>Antenna:</strong> 7-element Yagi design.
+                </p>
+                <p>
+                    The ground station design improved skills in RF design, packet handling, and system integration for telemetry reception.
                 </p>
             </div>
         </div>

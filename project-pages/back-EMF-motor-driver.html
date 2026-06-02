@@ -51,7 +51,7 @@
         </div>
 
         <div class="project-details">
-            <p class="section__text__p1">Sensorless BLDC Control</p>
+            <p class="section__text__p1">Lorem ipsum dolor sit amet.</p>
 
             <div class="project-section">
                 <h3>Description</h3>
@@ -81,16 +81,8 @@
             </div>
 
             <div class="project-section">
-                <h3>Back-EMF Zero-Crossing Detection</h3>
-                <p>
-                    This driver utilizes the internal comparator of the ATmega328P microcontroller to detect back-EMF zero-crossing events.
-                    During motor operation, the inactive phases generate back-EMF proportional to the rotor speed and position.
-                    By monitoring these voltage transitions and detecting zero-crossing points, the microcontroller determines the optimal 
-                    commutation timing for the next phase transition. This sensorless approach eliminates the need for Hall sensors while 
-                    maintaining reliable motor control, making it an excellent educational platform for understanding motor control principles.
-                </p>
+                <h3>Design Highlights</h3>
             </div>
-
             <div class="project-images">
                 <img src="../images/ProjectBack-EMFMotorDriver/F.png" alt="Back-EMF Motor Driver Front">
                 <img src="../images/ProjectBack-EMFMotorDriver/B.png" alt="Back-EMF Motor Driver Back">
@@ -102,30 +94,24 @@
             </div>
 
             <div class="project-section">
-                <h3>Power Stage Design</h3>
+                <h3>Technical Challenges</h3>
+                <p>
+                    This driver utilizes the internal comparator of the ATmega328P microcontroller to detect back-EMF zero-crossing events.
+                    During motor operation, the inactive phases generate back-EMF proportional to the rotor speed and position.
+                    By monitoring these voltage transitions and detecting zero-crossing points, the microcontroller determines the optimal
+                    commutation timing for the next phase transition. This sensorless approach eliminates the need for Hall sensors while
+                    maintaining reliable motor control.
+                </p>
                 <p>
                     The inverter stage consists of 6 N-Channel MOSFETs configured in a standard three-phase bridge topology.
                     Each phase is controlled by a complementary pair of upper and lower switches, allowing bidirectional current flow through the motor windings.
-                    The 3 DGD05473FNQ gate drivers from Diodes Incorporated provide the necessary voltage amplification to drive the MOSFET gates from 
-                    the low-voltage logic signals of the ATmega328P. The gate drivers also include integrated shoot-through protection to prevent 
-                    simultaneous conduction of upper and lower switches on the same phase, which would create a direct path from the power supply to ground.
+                    The DGD05473FNQ gate drivers provide the necessary voltage amplification to drive the MOSFET gates from the low-voltage logic signals of the MCU,
+                    and include shoot-through protection to prevent simultaneous conduction of upper and lower switches on the same phase.
                 </p>
-            </div>
-
-            <div class="project-section">
-                <h3>Commutation Strategy</h3>
                 <p>
-                    The control logic implements a six-step commutation pattern based on back-EMF zero-crossing detection.
-                    The ATmega328P microcontroller continuously monitors the back-EMF voltage through its internal comparator,
-                    detecting when the inactive phase voltage crosses zero. This event signals the optimal moment to advance to the next 
-                    commutation state, switching the MOSFET pattern to maintain smooth motor rotation. The simplicity of this approach 
-                    makes it an excellent teaching tool for understanding fundamental motor control principles while remaining effective 
-                    for practical EDF control applications.
+                    The control logic implements a six-step commutation pattern based on back-EMF zero-crossing detection. Back-EMF sensing requires the motor to reach a minimum speed threshold
+                    to generate sufficient voltage for reliable detection; ensuring consistent commutation across the operating range was a key design consideration.
                 </p>
-            </div>
-
-            <div class="project-section">
-                <h3>Design Highlights</h3>
                 <ul>
                     <li><strong>Educational Value:</strong> Clear demonstration of motor control principles and power electronics</li>
                     <li><strong>Simplicity:</strong> Minimalist design with only essential components, reducing complexity</li>
@@ -136,32 +122,21 @@
                 </ul>
             </div>
 
+            <!-- Tools & Technologies content moved into Learning Outcomes to match template -->
+
             <div class="project-section">
-                <h3>Operational Characteristics</h3>
-                <p>
-                    The driver operates effectively across the typical speed range required for line follower robot applications.
-                    Back-EMF sensing requires the motor to reach a minimum speed threshold to generate sufficient voltage for reliable 
-                    zero-crossing detection. This characteristic is well-suited to the gradual acceleration profile typical in autonomous 
-                    navigation robots. Once the motor reaches operational speed, the back-EMF signal provides consistent and reliable 
-                    commutation timing, ensuring smooth and predictable motor behavior throughout the competition arena traversal.
-                </p>
+                <h3>Design Tools</h3>
+                <ul>
+                    <li>KiCad</li>
+                    <li>Altium</li>
+                    <li>Mathcad</li>
+                    <li>VS Code</li>
+                    <li>SolidWorks</li>
+                </ul>
             </div>
 
             <div class="project-section">
-                <h3>Tools & Technologies</h3>
-                <p>
-                    <strong>EDA:</strong> KiCad<br>
-                    <strong>Design:</strong> Schematic capture, PCB layout, two-layer board<br>
-                    <strong>Microcontroller:</strong> ATmega328P with internal comparator<br>
-                    <strong>Gate Drivers:</strong> DGD05473FNQ from Diodes Incorporated<br>
-                    <strong>Power Switches:</strong> N-Channel MOSFETs<br>
-                    <strong>Control Method:</strong> Back-EMF zero-crossing detection<br>
-                    <strong>Manufacturing:</strong> Professional PCB fabrication
-                </p>
-            </div>
-
-            <div class="project-section">
-                <h3>Competition & Educational Platform</h3>
+                <h3>Learning Outcomes</h3>
                 <div style="text-align: center; margin: 2rem 0;">
                     <video controls style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
                         <source src="../images/ProjectBack-EMFMotorDriver/IMG_0080.MP4" type="video/mp4">
@@ -169,11 +144,15 @@
                     </video>
                 </div>
                 <p>
+                    <strong>Tools & Technologies:</strong><br>
+                    <strong>EDA:</strong> KiCad; <strong>Design:</strong> Schematic capture, PCB layout, two-layer board; <strong>Microcontroller:</strong> ATmega328P with internal comparator; <strong>Gate Drivers:</strong> DGD05473FNQ; <strong>Power Switches:</strong> N-Channel MOSFETs; <strong>Control Method:</strong> Back-EMF zero-crossing detection; <strong>Manufacturing:</strong> Professional PCB fabrication.
+                </p>
+                <p>
                     This motor driver was specifically designed for the 2025 Mechatronics Education Day Competition held in Craiova, Romania.
-                    It serves as both a practical control solution and an educational tool, demonstrating key concepts in motor control, 
+                    It serves as both a practical control solution and an educational tool, demonstrating key concepts in motor control,
                     power electronics, and embedded systems design. The driver powered an EDF (Electric-Ducted-Fan) for a line follower robot,
-                    enabling precise speed and direction control for autonomous navigation. By implementing sensorless commutation using the microcontroller's 
-                    internal comparator, this project exemplifies elegant solutions that balance simplicity with functionality, making it ideal for 
+                    enabling precise speed and direction control for autonomous navigation. By implementing sensorless commutation using the microcontroller's
+                    internal comparator, this project exemplifies elegant solutions that balance simplicity with functionality, making it ideal for
                     students and practitioners learning motor control design principles.
                 </p>
             </div>
