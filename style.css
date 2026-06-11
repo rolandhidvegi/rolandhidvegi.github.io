@@ -156,8 +156,9 @@ a:hover {
 section {
     position: relative;
     padding-top: 4vh;
+    padding-bottom: 6rem; /* ensure space for arrow buttons below content */
     height: 96vh;
-    margin: 0 10rem;
+    margin: 0 6rem; /* reduced from 10rem to tighten lateral spacing */
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -307,9 +308,10 @@ body > section {
 
 
 .arrow {
-    position: relative;
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem; /* sit 1rem above section bottom */
     display: block;
-    margin: 1rem 2rem 2rem auto;
     width: 3rem;
     height: auto;
     max-height: 3rem;
@@ -317,15 +319,13 @@ body > section {
     z-index: 5;
 }
 
+/* profile-specific placement remains the same (inherits absolute) */
 #profile .arrow {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
     margin: 0;
 }
 
 .details-container {
-    padding: 1.5rem;
+    padding: 1rem; /* slightly reduced padding */
     flex: 1;
     background: white;
     border-radius: 2rem;
@@ -388,9 +388,14 @@ body > section {
 /* TOOLKIT SECTION */
 
 #toolkit {
-    overflow: hidden;
+    overflow: visible; /* allow arrow to be visible */
     height: auto;
-    padding-bottom: 0;
+    padding-bottom: 6rem; /* reserve space for arrow */
+}
+
+/* Place toolkit arrow higher so it sits closer to the content */
+#toolkit .arrow {
+    bottom: 3rem;
 }
 
 .toolkit-sub-title {
@@ -403,7 +408,12 @@ body > section {
 .toolkit-details-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: nowrap; /* keep three columns side-by-side on most laptop widths */
+    margin: 0 0.25rem; /* further reduce lateral spacing */
+    padding: 0 0.25rem;
 }
 
 /* Align the visible edge of images toward the center for symmetric layout */
@@ -446,7 +456,25 @@ body > section {
     text-align: initial;
     gap: 2rem;
     justify-items: start;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
+}
+
+/* Reduce lateral margins for mid-size screens so toolkit fits at 125% scaling */
+@media (max-width: 1400px) {
+    section {
+        margin: 0 4rem;
+    }
+    .toolkit-details-container {
+        margin: 0 0.5rem;
+        padding: 0 0.5rem;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    section {
+        margin: 0 2rem;
+    }
 }
 
 article {
@@ -538,9 +566,9 @@ article .icon {
 .image-container{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    flex: 0 0 54%;
-    max-width: 54%;
-    min-width: 350px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 300px; /* reduced min-width to allow tighter layout */
     position: relative;
     height: 400px;
     overflow: hidden;
@@ -570,7 +598,7 @@ article .icon {
 
 #projects .arrow{
     position: absolute;
-    bottom: 2rem;
+    bottom: 10rem; /* raised a little more to sit closer to content */
     right: 2rem;
     margin: 0;
 }
