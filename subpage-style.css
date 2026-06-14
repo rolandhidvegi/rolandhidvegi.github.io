@@ -78,24 +78,10 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.hamburger-menu {
-    position: relative;
-}
-
-.hamburger-icon {
+#hamburger-nav .hamburger-menu {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-}
-
-.hamburger-icon span {
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    transition: all 0.3s ease-in-out;
+    align-items: center;
+    height: auto;
 }
 
 .menu-links {
@@ -135,28 +121,34 @@ a:hover {
     max-height: 500px; /* Adjust as needed */
 }
 
+ .hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 3px;                /* slightly thicker for better visibility */
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;        /* soft rounded edges */
+}
+
 .hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(8px, 8px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
+  transform: scaleX(0);       /* optional: adds a collapsing effect */
 }
 
 .hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(8px, -8px);
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
-}
-
-.hamburger-icon span:nth-child(2) {
-    opacity: 1;
-}
-
-.hamburger-icon span:last-child {
-    transform: none;
+  transform: rotate(-45deg) translate(7px, -6px);
 }
 
 /* Ensure section arrow buttons are consistently placed */
@@ -248,6 +240,21 @@ body > nav#hamburger-nav ~ section {
     width: 100%;
     object-fit: contain;
     border-radius: 0.5rem;
+}
+
+/* Full-width centered project image inside the .project-images grid */
+.project-image-full {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.project-image-full img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
 }
 
 .back-button {
@@ -612,6 +619,66 @@ footer p {
 
     footer p {
         font-size: 0.9rem;
+    }
+}
+
+/* ----------------------------------------------------------
+   Fix subpage margins and layout on phones/tablets
+   override inline section margins and tighten spacing
+   ---------------------------------------------------------- */
+@media (max-width: 900px) {
+    /* Override inline margins on <section> in project pages */
+    section {
+        margin: 0 1.5rem !important;
+        padding-top: 3vh !important;
+    }
+
+    body > nav#hamburger-nav ~ section {
+        margin-top: 7vh;
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }
+
+    .project-hero {
+        height: auto !important;
+        margin: 1rem 0;
+    }
+
+    .project-hero img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .project-details {
+        margin: 1.5rem 0;
+    }
+
+    footer {
+        margin: 0 1rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Tighter margins for small phones */
+    section {
+        margin: 0 0.75rem !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    body > nav#hamburger-nav ~ section {
+        margin-left: 0.75rem !important;
+        margin-right: 0.75rem !important;
+    }
+
+    .project-hero {
+        height: auto !important;
+        margin: 0.75rem 0;
+    }
+
+    .project-details {
+        margin: 1rem 0;
+        line-height: 1.5;
     }
 }
 
